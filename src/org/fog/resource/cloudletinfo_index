@@ -1,0 +1,2 @@
+userId : vmId : length : fileSize : outputSize : timeStamp
+ <int>   <int>   <long>   <long>      <long>      <double>

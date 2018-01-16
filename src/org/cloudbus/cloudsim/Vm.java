@@ -22,6 +22,8 @@ import java.util.List;
  */
 public class Vm {
 
+	private int status; // 0: light, 1: heavy
+
 	/** The id. */
 	private int id;
 

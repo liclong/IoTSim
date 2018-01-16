@@ -1,10 +1,7 @@
-# fogsim
-A Toolkit for Modeling and Simulation of Resource Management Techniques in Internet of Things, Edge and Fog Computing Environments
+# sslb
+A simulation tookit for SSLB, a self-similarity based load balancing mechanism for large scale fog computing.
 
-## IMPORTANT
-Please check the `improv` branch for latest changes. Master branch has been left intact until complete testing.
-
-## How to run iFogSim ?
+## How to run the project ?
 
 * Create a Java project in Eclipse. 
 * Inside the project directory, initialize an empty Git repository with the following command

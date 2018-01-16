@@ -14,6 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.examples.CloudSimExample1;
 
 /**
  * Cloudlet is an extension to the cloudlet. It stores, despite all the information encapsulated in
@@ -59,6 +60,8 @@ public class Cloudlet {
 
 	/** The time where this Cloudlet completes. */
 	private double finishTime;
+
+	private double timestamp;
 
 	/**
 	 * Start time of executing this Cloudlet. With new functionalities, such as CANCEL, PAUSED and
@@ -170,6 +173,7 @@ public class Cloudlet {
 	 * @pre cloudletOutputSize >= 1
 	 * @post $none
 	 */
+
 	public Cloudlet(
 			final int cloudletId,
 			final long cloudletLength,
@@ -787,10 +791,17 @@ public class Cloudlet {
 	 * @pre clockTime >= 0.0
 	 * @post $none
 	 */
-	public void setExecStartTime(final double clockTime) {
-		execStartTime = clockTime;
+	//public void setExecStartTime(final double clockTime) {
+	//	execStartTime = clockTime;
+	//	if (record) {
+	//		write("Sets the execution start time to " + num.format(clockTime));
+	//	}
+	//}
+
+	public void setExecStartTime(double timestamp) {
+		execStartTime = timestamp;
 		if (record) {
-			write("Sets the execution start time to " + num.format(clockTime));
+			write("Sets the execution start time to " + num.format(timestamp));
 		}
 	}
 
@@ -804,6 +815,10 @@ public class Cloudlet {
 	public double getExecStartTime() {
 		return execStartTime;
 	}
+
+	//public double getExecStartTime() {
+	//	return 500;
+	//}
 
 	/**
 	 * Sets this Cloudlet's execution parameters. These parameters are set by the CloudResource
