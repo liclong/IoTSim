@@ -1,6 +1,8 @@
 # SimSSLB
 A simulation tookit for SSLB, a self-similarity based load balancing mechanism for large scale fog computing.
 
+![Image text](https://github.com/liclong/SimSSLB/blob/master/edge_computing.png)
+
 ## How to run the project ?
 
 * Create a Java project in Eclipse. 
