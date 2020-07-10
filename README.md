@@ -1,4 +1,4 @@
-# sslb
+# SimSSLB
 A simulation tookit for SSLB, a self-similarity based load balancing mechanism for large scale fog computing.
 
 ## How to run the project ?
